@@ -135,5 +135,5 @@ main > .band:last-child { margin-bottom: -56px; }
 
 /* Figures (research page) */
 .fig { margin: 22px 0 6px; }
-.fig img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.fig img { display: block; width: auto; max-width: 100%; height: auto; border: 1px solid var(--rule); }
 .fig figcaption { font: 13px/1.6 var(--mono); color: var(--ink-3); margin-top: 10px; }

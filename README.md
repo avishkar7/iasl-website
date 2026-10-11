@@ -31,5 +31,10 @@ For a new year, copy a whole `<section class="section" id="y2023">…</section>`
 
 **Header / footer** — they are repeated in every page. When you change the menu or footer, change it in all eight files (a find-and-replace across the folder works).
 
+## Open questions for the advisor
+
+- [ ] **Undergraduate students** — confirm who should be listed under Undergraduates on `group.html` (current names come from the old live site and may be out of date).
+- [ ] **Juliano Siloto Assine** — how to show his timeline (start year) on the Group page. His research keywords were removed for consistency with the other entries; only his LinkedIn is linked for now.
+
 ## Colors
 Defined at the top of `css/style.css`: `--paper` (background), `--ink` (navy text), `--accent` (rust), `--band` (dark navy strip).

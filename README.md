@@ -35,6 +35,7 @@ For a new year, copy a whole `<section class="section" id="y2023">…</section>`
 
 - [ ] **Undergraduate students** — confirm who should be listed under Undergraduates on `group.html` (current names come from the old live site and may be out of date).
 - [ ] **Juliano Siloto Assine** — how to show his timeline (start year) on the Group page. His research keywords were removed for consistency with the other entries; only his LinkedIn is linked for now.
+- [ ] **Malik Luti** ([LinkedIn](https://www.linkedin.com/in/malik-luti/)) — not on the Group page yet; ask how to list him (role, section, and years). He is a co-author on FUSCO (MILCOM 2025) and the semantic digital twin paper (SMARTCOMP Workshops 2026).
 
 ## Colors
 Defined at the top of `css/style.css`: `--paper` (background), `--ink` (navy text), `--accent` (rust), `--band` (dark navy strip).

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — UCI IASL</title>
+<meta name="description" content="Intelligent and Autonomous Systems Lab, University of California, Irvine">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">UCI IASL <span>· Intelligent and Autonomous Systems Lab</span></a>
+    <nav class="nav"><a href="research.html" aria-current="page">Research</a><a href="group.html">Group</a><a href="fund.html">Fund</a><a href="papers.html">Papers</a><a href="updates.html">Misc. Updates</a></nav>
+    <a class="btn" href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <p class="kicker">Research</p>
+    <h1>Research areas</h1>
+  </div>
+</section>
+<section class="section" id="split-computing">
+  <div class="wrap split">
+    <p class="label">01</p>
+    <div>
+      <h2>Split Computing</h2>
+      <p>Deep neural network (DNN) models for image processing are split into a head, executed on the mobile device, and a tail, executed on an edge server. The goal is to reduce the capture-to-output delay when the wireless link to the edge server is poor or when network and compute conditions vary. The design balances three objectives: a small encoder on the device, less data transmitted to the edge server, and high model accuracy.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>Y. Matsubara, R. Yang, M. Levorato, S. Mandt. <span class="t">“SC2 Benchmark: Supervised Compression for Split Computing.”</span> <span class="v">Transactions on Machine Learning Research, 2023</span>.</li><li>Y. Matsubara, M. Levorato, F. Restuccia. <span class="t">“Split Computing and Early Exiting for Deep Learning Applications: Survey and Research Challenges.”</span> <span class="v">ACM Computing Surveys (CSUR), 2022</span>.</li><li>Y. Matsubara, D. Callegaro, S. Singh, M. Levorato, F. Restuccia. <span class="t">“BottleFit: Learning Compressed Representations in Deep Neural Networks for Effective and Efficient Split Computing.”</span> <span class="v">IEEE WoWMoM, pp. 337–346, 2022</span>.</li><li>Y. Matsubara, R. Yang, M. Levorato, S. Mandt. <span class="t">“Supervised Compression for Resource-Constrained Edge Computing Systems.”</span> <span class="v">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), pp. 2685–2695, 2022</span>.</li><li>D. Callegaro, Y. Matsubara, M. Levorato. <span class="t">“Optimal Task Allocation for Time-Varying Edge Computing Systems with Split DNNs.”</span> <span class="v">IEEE GLOBECOM, pp. 1–6, 2020</span>.</li><li>Y. Matsubara, D. Callegaro, S. Baidya, M. Levorato, S. Singh. <span class="t">“Head Network Distillation: Splitting Distilled Deep Neural Networks for Resource-Constrained Edge Computing Systems.”</span> <span class="v">IEEE Access, vol. 8, pp. 212177–212193, 2020</span>. <span class="links"><a href="https://doi.org/10.1109/ACCESS.2020.3039714">DOI</a><a href="https://github.com/yoshitomo-matsubara/head-network-distillation">Code</a></span></li><li>Y. Matsubara, M. Levorato. <span class="t">“Neural Compression and Filtering for Edge-Assisted Real-Time Object Detection in Challenged Networks.”</span> <span class="v">25th International Conference on Pattern Recognition (ICPR), pp. 2272–2279, 2021</span>. <span class="links"><a href="https://github.com/yoshitomo-matsubara/hnd-ghnd-object-detectors">Code</a></span></li><li>Y. Matsubara, M. Levorato. <span class="t">“Split Computing for Complex Object Detectors: Challenges and Preliminary Results.”</span> <span class="v">4th International Workshop on Embedded and Mobile Deep Learning (EMDL ’20), pp. 7–12, 2020</span>.</li><li>Y. Matsubara, S. Baidya, D. Callegaro, M. Levorato, S. Singh. <span class="t">“Distilled Split Deep Neural Networks for Edge-Assisted Real-Time Systems.”</span> <span class="v">Workshop on Hot Topics in Video Analytics and Intelligent Edges (HotEdgeVideo ’19), pp. 21–26, 2019</span>. <span class="links"><a href="https://doi.org/10.1145/3349614.3356022">DOI</a><a href="https://github.com/yoshitomo-matsubara/head-network-distillation">Code</a></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="dynamic-edge-computing">
+  <div class="wrap split">
+    <p class="label">02</p>
+    <div>
+      <h2>Dynamic Edge Computing</h2>
+      <p>Edge computing gives Mobile Autonomous Systems (MAS) access to heavier processing power, which can reduce delay and improve accuracy. The main challenges are the fluctuating quality of the wireless channel and the limited resources available on the device. Earlier work proactively looked for better conditions to execute local tasks; current work focuses on making better use of local resources through predicted task distribution.</p>
+      <p class="meta">Figure on the original site: SeReMAS system architecture.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>D. Callegaro, M. Levorato, F. Restuccia. <span class="t">“SeReMAS: Self-Resilient Mobile Autonomous Systems Through Predictive Edge Computing.”</span> <span class="v">IEEE SECON, 2021</span>.</li><li>D. Callegaro, Y. Matsubara, M. Levorato. <span class="t">“Optimal Task Allocation for Time-Varying Edge Computing Systems with Split DNNs.”</span> <span class="v">IEEE GLOBECOM, 2020</span>.</li><li>S. Baidya, et al.. <span class="t">“Vehicular and Edge Computing for Emerging Connected and Autonomous Vehicle Applications.”</span> <span class="v">57th ACM/IEEE Design Automation Conference (DAC), 2020</span>.</li><li>D. Callegaro, M. Levorato. <span class="t">“Optimal Computation Offloading in Edge-Assisted UAV Systems.”</span> <span class="v">IEEE GLOBECOM, 2018</span>. <span class="links"><a href="https://doi.org/10.1109/glocom.2018.8648099">DOI</a></span></li><li>S. Baidya, Y. Chen, M. Levorato. <span class="t">“eBPF-Based Content and Computation-Aware Communication for Real-Time Edge Computing.”</span> <span class="v">IEEE INFOCOM Workshops, 2018</span>. <span class="links"><a href="https://doi.org/10.1109/infcomw.2018.8407006">DOI</a></span></li><li>S. Baidya, M. Levorato. <span class="t">“Edge-Assisted Content and Computation-Driven Dynamic Network Selection for Real-Time Services in the Urban IoT.”</span> <span class="v">IEEE INFOCOM Workshops, 2017</span>. <span class="links"><a href="https://doi.org/10.1109/infcomw.2017.8116478">DOI</a></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="distributed-video-processing">
+  <div class="wrap split">
+    <p class="label">03</p>
+    <div>
+      <h2>Distributed Video Processing</h2>
+      <p>SmartDet.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>D. Callegaro, M. Levorato, F. Restuccia. <span class="t">“SmartDet: Context-Aware Dynamic Control of Edge Task Offloading for Mobile Object Detection.”</span> <span class="v">IEEE WoWMoM, Belfast, June 2022</span>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="iot-healthcare">
+  <div class="wrap split">
+    <p class="label">04</p>
+    <div>
+      <h2>IoT for Healthcare</h2>
+      <p>This project aims to improve the mental and physical well-being of pregnant women in underrepresented communities by combining in-home visits with wearable-based monitoring and interventions, with a focus on detecting and reducing stress.</p>
+      <p>The system is a closed loop: (1) health, movement, and context data are collected from phones and wearables and sent to a cloud server; (2) mental-health indicators are detected; (3) personalized interventions are delivered when indicators fall outside a standard range; and (4) the detectors improve over time through personalization and a small set of user-provided labels.</p>
+      <p>Labels come from surveys. Reinforcement-learning-based active learning chooses which samples users are asked to label, favoring samples that improve detection and that users are likely to answer quickly; user engagement is part of the reward design.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>A. Tazarv, S. Labbaf, S. M. Reich, N. Dutt, A. M. Rahmani, M. Levorato. <span class="t">“Personalized Stress Monitoring using Wearable Sensors in Everyday Settings.”</span> <span class="v">43rd Annual International Conference of the IEEE EMBC, pp. 7332–7335, 2021</span>.</li><li>A. Tazarv, S. Labbaf, A. M. Rahmani, N. Dutt, M. Levorato. <span class="t">“Data Collection and Labeling of Real-Time IoT-Enabled Bio-Signals in Everyday Settings for Mental Health Improvement.”</span> <span class="v">ACM Conference on Information Technology for Social Good (GoodIT ’21), pp. 186–191, 2021</span>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="federated-learning">
+  <div class="wrap split">
+    <p class="label">05</p>
+    <div>
+      <h2>Federated Learning for Wireless Systems’ Control</h2>
+      <p>Next-generation (NextG) wireless networks need adaptive control that traditional model-based methods struggle to provide. Deep reinforcement learning (DRL) can provide it, but it needs large amounts of data, and centralized training requires heavy data exchange. We propose federated DRL (F-DRL), in which Radio Access Networks collaboratively train a shared neural network by exchanging model weights rather than raw data; it outperforms both fully distributed and centralized DRL. The next step is to extend the approach to heterogeneous networks that need personalization to their own environments.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>P. Tehrani, F. Restuccia, M. Levorato. <span class="t">“Federated Deep Reinforcement Learning for the Distributed Control of NextG Wireless Networks.”</span> <span class="v">IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), 2021</span>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="collaborative-classification">
+  <div class="wrap split">
+    <p class="label">06</p>
+    <div>
+      <h2>Collaborative Classification</h2>
+      <p>IoT systems combine sensors, which acquire data but have limited computing power, with edge and cloud processors, which analyze data and have a wider view of the system. We develop collaborative classification methods that let sensors decide on the fly which observations matter, guided by edge-assisted learning that adapts online, so that data processing in constrained IoT systems becomes efficient.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>I. Burago, M. Levorato. <span class="t">“Cloud-Assisted On-Sensor Observation Classification in Latency-Impeded IoT Systems.”</span> <span class="v">IEEE International Symposium on Information Theory (ISIT), Paris, 2019</span>. <span class="links"><a href="https://doi.org/10.1109/isit.2019.8849760">DOI</a></span></li><li>I. Burago, M. Levorato. <span class="t">“Randomized Edge-Assisted On-Sensor Information Selection for Bandwidth-Constrained Systems.”</span> <span class="v">Asilomar Conference on Signals, Systems, and Computers (ACSSC), Pacific Grove, 2018</span>. <span class="links"><a href="https://doi.org/10.1109/acssc.2018.8645182">DOI</a></span></li><li>I. Burago, D. Callegaro, M. Levorato, S. Singh. <span class="t">“Intelligent Data Filtering in Constrained IoT Systems.”</span> <span class="v">Asilomar Conference on Signals, Systems, and Computers (ACSSC), Pacific Grove, 2017</span>. <span class="links"><a href="https://doi.org/10.1109/acssc.2017.8335485">DOI</a></span></li><li>I. Burago, M. Levorato, A. Chowdhery. <span class="t">“Bandwidth-Aware Data Filtering in Edge-Assisted Wireless Sensor Systems.”</span> <span class="v">IEEE SECON, San Diego, 2017</span>. <span class="links"><a href="https://doi.org/10.1109/sahcn.2017.7964938">DOI</a></span></li><li>I. Burago, M. Levorato, S. Singh. <span class="t">“Semantic Compression for Edge-Assisted Systems.”</span> <span class="v">Information Theory and Applications Workshop (ITA), San Diego, 2017</span>. <span class="links"><a href="https://doi.org/10.1109/ita.2017.8023457">DOI</a></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© 2014–2026 IASL · <a href="https://www.cs.uci.edu">Computer Science</a> · <a href="https://www.ics.uci.edu">Donald Bren School of ICS</a> · <a href="https://uci.edu">UC Irvine</a></div>
+    <div>Contact: <a href="mailto:levorato@uci.edu">Marco Levorato</a> · <a href="https://github.com/uci-iasl/website">Source on GitHub</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

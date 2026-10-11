@@ -28,9 +28,35 @@
     <h1>Research areas</h1>
   </div>
 </section>
-<section class="section" id="split-computing">
+<section class="section" id="autonomous-navigation">
   <div class="wrap split">
     <p class="label">01</p>
+    <div>
+      <h2>Autonomous Navigation and Perception</h2>
+      <p>Mobile robots and vehicles have to perceive and move under tight compute and energy budgets. This area develops navigation and perception pipelines that adapt their computation to context: dynamic slimmable and multi-branch split networks for navigation, context-adaptive and motion-aware depth estimation, uncertainty-aware sensor adaptation for BEV SLAM, radar-based object detection, cooperative collision prediction, and vision-language-action models for waypoint generation.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>T. K. Johnsen, M. Levorato. <span class="t">“WayFinder: Hierarchical Visual-Language-Action for Zero-Shot Waypoint Generation and Low-Level Kinematic Control.”</span> <span class="v">arXiv preprint arXiv:2609.37922, 2026</span>. <span class="links"><a href="https://arxiv.org/abs/2609.37922">arXiv</a></span></li><li>R. Bhattacharjya, M. Kim, A. Sarkar, T. Das, S. Y. Wu, E. Bozorgzadeh, et al. <span class="t">“FRESHLATENT: Channel-Aware Latent Adaptation for Resource-Constrained Embodied VLM Perception.”</span> <span class="v">arXiv preprint arXiv:2609.30629, 2026</span>. <span class="links"><a href="https://arxiv.org/abs/2609.30629">arXiv</a></span></li><li>T. K. Johnsen, M. Levorato. <span class="t">“CADENCE: Context-Adaptive Depth Estimation for Navigation and Computational Efficiency.”</span> <span class="v">IEEE World AI IoT Congress (AIIoT), pp. 122–128, 2026</span>.</li><li>Z. Xia, M. Levorato. <span class="t">“SmartFusion-SLAM: From Passive Fusion to Temporal Uncertainty-Aware Sensor Adaptation in BEV SLAM.”</span> <span class="v">ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS), 2026</span>.</li><li>M. Luti, D. Šolc, M. Dopiriak, Z. Xia, J. Gazda, M. Levorato. <span class="t">“A Semantic Digital Twin for Occlusion-Aware Cooperative Collision Prediction.”</span> <span class="v">IEEE SMARTCOMP Workshops, 2026</span>.</li><li>M. Yang, T. K. Johnsen, I. Harshbarger, M. Mendula, M. Levorato. <span class="t">“SmartDepth: Motion-Aware Depth Prediction with Intelligent Computing for Navigation.”</span> <span class="v">International Conference on Distributed Computing in Smart Systems (DCOSS), 2025</span>.</li><li>M. Luti, I. Harshbarger, M. Dopiriak, H. Pathanjaly, J. Gazda, M. Levorato. <span class="t">“FUSCO: Distributed Agentic Data Acquisition and Fusion for Semantic Corner Case Detection.”</span> <span class="v">IEEE MILCOM, pp. 1–6, 2025</span>.</li><li>I. Harshbarger, C. Zejda, M. Levorato. <span class="t">“CONDAR: Context-Aware Distributed Dynamic Object Detection on Radar Data.”</span> <span class="v">IEEE MILCOM, pp. 875–880, 2024</span>.</li><li>T. K. Johnsen, I. Harshbarger, Z. Xia, M. Levorato. <span class="t">“NaviSplit: Dynamic Multi-Branch Split DNNs for Efficient Distributed Autonomous Navigation.”</span> <span class="v">IEEE WoWMoM, 2024</span>.</li><li>T. K. Johnsen, M. Levorato. <span class="t">“NaviSlim: Adaptive Context-Aware Navigation and Sensing via Dynamic Slimmable Networks.”</span> <span class="v">arXiv preprint arXiv:2407.01563, 2024</span>. <span class="links"><a href="https://arxiv.org/abs/2407.01563">arXiv</a></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="wireless-edge">
+  <div class="wrap split">
+    <p class="label">02</p>
+    <div>
+      <h2>Wireless Communications for Edge Computing</h2>
+      <p>When inference is split between a device and an edge server, the wireless link becomes part of the computation. This area designs communication schemes around what the neural network needs rather than around raw bits: semantic HARQ that protects the information a split DNN depends on, semantic multi-user MIMO and RAN slicing driven by dynamic split neural networks, hierarchical semantic communications for distributed sensor fusion, and beamforming computed through split computing.</p>
+      <h3>Publications</h3>
+      <ul class="plain pubs">
+        <li>L. Qin, I. A. Harshbarger, L. Nasraoui, C. F. Chiasserini, M. Levorato. <span class="t">“Omnis: Semantic RAN Slicing via Dynamic Split Neural Networks.”</span> <span class="v">IEEE INFOCOM, pp. 1–10, 2026</span>.</li><li>I. A. Harshbarger, L. Nasraoui, M. Levorato. <span class="t">“SHARQ: Semantic HARQ for Reliable Distributed DNN Execution.”</span> <span class="v">IEEE MILCOM, pp. 527–532, 2025</span>.</li><li>S. L. G. Contreras, F. H. Khandaker, F. Restuccia, M. Levorato. <span class="t">“SOAR: Semantic Multi-User MIMO Communications for Reliable Wireless Edge Computing.”</span> <span class="v">International Conference on Distributed Computing in Smart Systems (DCOSS), 2025</span>.</li><li>L. Qin, Y. Wu, S. Najeh, M. Levorato, C. F. Chiasserini. <span class="t">“HERACLES: Hierarchical Semantic Communications for Distributed Dynamic Sensor Fusion.”</span> <span class="v">IEEE ICDCS, 2025</span>.</li><li>N. Bahadori, Y. Matsubara, M. Levorato, F. Restuccia. <span class="t">“SplitBeam: Effective and Efficient Beamforming in Wi-Fi Networks Through Split Computing.”</span> <span class="v">IEEE ICDCS, 2023</span>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section" id="split-computing">
+  <div class="wrap split">
+    <p class="label">03</p>
     <div>
       <h2>Split Computing</h2>
       <p>Deep neural network (DNN) models for image processing are split into a head, executed on the mobile device, and a tail, executed on an edge server. The goal is to reduce the capture-to-output delay when the wireless link to the edge server is poor or when network and compute conditions vary. The design balances three objectives: a small encoder on the device, less data transmitted to the edge server, and high model accuracy.</p>
@@ -43,7 +69,7 @@
 </section>
 <section class="section" id="dynamic-edge-computing">
   <div class="wrap split">
-    <p class="label">02</p>
+    <p class="label">04</p>
     <div>
       <h2>Dynamic Edge Computing</h2>
       <p>Edge computing gives Mobile Autonomous Systems (MAS) access to heavier processing power, which can reduce delay and improve accuracy. The main challenges are the fluctuating quality of the wireless channel and the limited resources available on the device. Earlier work proactively looked for better conditions to execute local tasks; current work focuses on making better use of local resources through predicted task distribution.</p>
@@ -57,7 +83,7 @@
 </section>
 <section class="section" id="distributed-video-processing">
   <div class="wrap split">
-    <p class="label">03</p>
+    <p class="label">05</p>
     <div>
       <h2>Distributed Video Processing</h2>
       <p>SmartDet.</p>
@@ -70,7 +96,7 @@
 </section>
 <section class="section" id="iot-healthcare">
   <div class="wrap split">
-    <p class="label">04</p>
+    <p class="label">06</p>
     <div>
       <h2>IoT for Healthcare</h2>
       <p>This project aims to improve the mental and physical well-being of pregnant women in underrepresented communities by combining in-home visits with wearable-based monitoring and interventions, with a focus on detecting and reducing stress.</p>
@@ -85,7 +111,7 @@
 </section>
 <section class="section" id="federated-learning">
   <div class="wrap split">
-    <p class="label">05</p>
+    <p class="label">07</p>
     <div>
       <h2>Federated Learning for Wireless Systems’ Control</h2>
       <p>Next-generation (NextG) wireless networks need adaptive control that traditional model-based methods struggle to provide. Deep reinforcement learning (DRL) can provide it, but it needs large amounts of data, and centralized training requires heavy data exchange. We propose federated DRL (F-DRL), in which Radio Access Networks collaboratively train a shared neural network by exchanging model weights rather than raw data; it outperforms both fully distributed and centralized DRL. The next step is to extend the approach to heterogeneous networks that need personalization to their own environments.</p>
@@ -98,39 +124,13 @@
 </section>
 <section class="section" id="collaborative-classification">
   <div class="wrap split">
-    <p class="label">06</p>
+    <p class="label">08</p>
     <div>
       <h2>Collaborative Classification</h2>
       <p>IoT systems combine sensors, which acquire data but have limited computing power, with edge and cloud processors, which analyze data and have a wider view of the system. We develop collaborative classification methods that let sensors decide on the fly which observations matter, guided by edge-assisted learning that adapts online, so that data processing in constrained IoT systems becomes efficient.</p>
       <h3>Publications</h3>
       <ul class="plain pubs">
         <li>I. Burago, M. Levorato. <span class="t">“Cloud-Assisted On-Sensor Observation Classification in Latency-Impeded IoT Systems.”</span> <span class="v">IEEE International Symposium on Information Theory (ISIT), Paris, 2019</span>. <span class="links"><a href="https://doi.org/10.1109/isit.2019.8849760">DOI</a></span></li><li>I. Burago, M. Levorato. <span class="t">“Randomized Edge-Assisted On-Sensor Information Selection for Bandwidth-Constrained Systems.”</span> <span class="v">Asilomar Conference on Signals, Systems, and Computers (ACSSC), Pacific Grove, 2018</span>. <span class="links"><a href="https://doi.org/10.1109/acssc.2018.8645182">DOI</a></span></li><li>I. Burago, D. Callegaro, M. Levorato, S. Singh. <span class="t">“Intelligent Data Filtering in Constrained IoT Systems.”</span> <span class="v">Asilomar Conference on Signals, Systems, and Computers (ACSSC), Pacific Grove, 2017</span>. <span class="links"><a href="https://doi.org/10.1109/acssc.2017.8335485">DOI</a></span></li><li>I. Burago, M. Levorato, A. Chowdhery. <span class="t">“Bandwidth-Aware Data Filtering in Edge-Assisted Wireless Sensor Systems.”</span> <span class="v">IEEE SECON, San Diego, 2017</span>. <span class="links"><a href="https://doi.org/10.1109/sahcn.2017.7964938">DOI</a></span></li><li>I. Burago, M. Levorato, S. Singh. <span class="t">“Semantic Compression for Edge-Assisted Systems.”</span> <span class="v">Information Theory and Applications Workshop (ITA), San Diego, 2017</span>. <span class="links"><a href="https://doi.org/10.1109/ita.2017.8023457">DOI</a></span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="section" id="wireless-edge">
-  <div class="wrap split">
-    <p class="label">07</p>
-    <div>
-      <h2>Wireless Communications for Edge Computing</h2>
-      <p>When inference is split between a device and an edge server, the wireless link becomes part of the computation. This area designs communication schemes around what the neural network needs rather than around raw bits: semantic HARQ that protects the information a split DNN depends on, semantic multi-user MIMO and RAN slicing driven by dynamic split neural networks, hierarchical semantic communications for distributed sensor fusion, and beamforming computed through split computing.</p>
-      <h3>Publications</h3>
-      <ul class="plain pubs">
-        <li>L. Qin, I. A. Harshbarger, L. Nasraoui, C. F. Chiasserini, M. Levorato. <span class="t">“Omnis: Semantic RAN Slicing via Dynamic Split Neural Networks.”</span> <span class="v">IEEE INFOCOM, pp. 1–10, 2026</span>.</li><li>I. A. Harshbarger, L. Nasraoui, M. Levorato. <span class="t">“SHARQ: Semantic HARQ for Reliable Distributed DNN Execution.”</span> <span class="v">IEEE MILCOM, pp. 527–532, 2025</span>.</li><li>S. L. G. Contreras, F. H. Khandaker, F. Restuccia, M. Levorato. <span class="t">“SOAR: Semantic Multi-User MIMO Communications for Reliable Wireless Edge Computing.”</span> <span class="v">International Conference on Distributed Computing in Smart Systems (DCOSS), 2025</span>.</li><li>L. Qin, Y. Wu, S. Najeh, M. Levorato, C. F. Chiasserini. <span class="t">“HERACLES: Hierarchical Semantic Communications for Distributed Dynamic Sensor Fusion.”</span> <span class="v">IEEE ICDCS, 2025</span>.</li><li>N. Bahadori, Y. Matsubara, M. Levorato, F. Restuccia. <span class="t">“SplitBeam: Effective and Efficient Beamforming in Wi-Fi Networks Through Split Computing.”</span> <span class="v">IEEE ICDCS, 2023</span>.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="section" id="autonomous-navigation">
-  <div class="wrap split">
-    <p class="label">08</p>
-    <div>
-      <h2>Autonomous Navigation and Perception</h2>
-      <p>Mobile robots and vehicles have to perceive and move under tight compute and energy budgets. This area develops navigation and perception pipelines that adapt their computation to context: dynamic slimmable and multi-branch split networks for navigation, context-adaptive and motion-aware depth estimation, uncertainty-aware sensor adaptation for BEV SLAM, radar-based object detection, cooperative collision prediction, and vision-language-action models for waypoint generation.</p>
-      <h3>Publications</h3>
-      <ul class="plain pubs">
-        <li>T. K. Johnsen, M. Levorato. <span class="t">“WayFinder: Hierarchical Visual-Language-Action for Zero-Shot Waypoint Generation and Low-Level Kinematic Control.”</span> <span class="v">arXiv preprint arXiv:2609.37922, 2026</span>. <span class="links"><a href="https://arxiv.org/abs/2609.37922">arXiv</a></span></li><li>R. Bhattacharjya, M. Kim, A. Sarkar, T. Das, S. Y. Wu, E. Bozorgzadeh, et al. <span class="t">“FRESHLATENT: Channel-Aware Latent Adaptation for Resource-Constrained Embodied VLM Perception.”</span> <span class="v">arXiv preprint arXiv:2609.30629, 2026</span>. <span class="links"><a href="https://arxiv.org/abs/2609.30629">arXiv</a></span></li><li>T. K. Johnsen, M. Levorato. <span class="t">“CADENCE: Context-Adaptive Depth Estimation for Navigation and Computational Efficiency.”</span> <span class="v">IEEE World AI IoT Congress (AIIoT), pp. 122–128, 2026</span>.</li><li>Z. Xia, M. Levorato. <span class="t">“SmartFusion-SLAM: From Passive Fusion to Temporal Uncertainty-Aware Sensor Adaptation in BEV SLAM.”</span> <span class="v">ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS), 2026</span>.</li><li>M. Luti, D. Šolc, M. Dopiriak, Z. Xia, J. Gazda, M. Levorato. <span class="t">“A Semantic Digital Twin for Occlusion-Aware Cooperative Collision Prediction.”</span> <span class="v">IEEE SMARTCOMP Workshops, 2026</span>.</li><li>M. Yang, T. K. Johnsen, I. Harshbarger, M. Mendula, M. Levorato. <span class="t">“SmartDepth: Motion-Aware Depth Prediction with Intelligent Computing for Navigation.”</span> <span class="v">International Conference on Distributed Computing in Smart Systems (DCOSS), 2025</span>.</li><li>M. Luti, I. Harshbarger, M. Dopiriak, H. Pathanjaly, J. Gazda, M. Levorato. <span class="t">“FUSCO: Distributed Agentic Data Acquisition and Fusion for Semantic Corner Case Detection.”</span> <span class="v">IEEE MILCOM, pp. 1–6, 2025</span>.</li><li>I. Harshbarger, C. Zejda, M. Levorato. <span class="t">“CONDAR: Context-Aware Distributed Dynamic Object Detection on Radar Data.”</span> <span class="v">IEEE MILCOM, pp. 875–880, 2024</span>.</li><li>T. K. Johnsen, I. Harshbarger, Z. Xia, M. Levorato. <span class="t">“NaviSplit: Dynamic Multi-Branch Split DNNs for Efficient Distributed Autonomous Navigation.”</span> <span class="v">IEEE WoWMoM, 2024</span>.</li><li>T. K. Johnsen, M. Levorato. <span class="t">“NaviSlim: Adaptive Context-Aware Navigation and Sensing via Dynamic Slimmable Networks.”</span> <span class="v">arXiv preprint arXiv:2407.01563, 2024</span>. <span class="links"><a href="https://arxiv.org/abs/2407.01563">arXiv</a></span></li>
       </ul>
     </div>
   </div>

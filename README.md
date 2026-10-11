@@ -12,6 +12,7 @@ fund.html       Funded projects
 papers.html     All publications by year
 updates.html    Misc. Updates (news)
 contact.html    Contact
+img/research/    Research figures (compressed .webp)
 css/style.css   All styling — colors and fonts are tokens at the top of the file
 ```
 
@@ -35,6 +36,7 @@ For a new year, copy a whole `<section class="section" id="y2023">…</section>`
 
 - [ ] **Undergraduate students** — confirm who should be listed under Undergraduates on `group.html` (current names come from the old live site and may be out of date).
 - [ ] **Juliano Siloto Assine** — how to show his timeline (start year) on the Group page. His research keywords were removed for consistency with the other entries; only his LinkedIn is linked for now.
+- [ ] **Research images** — the live research page shows a SeReMAS architecture figure (Dynamic Edge Computing) and a SmartDet image (Distributed Video Processing); neither is in the uci-iasl/website repo. Get the original files and add them to `img/research/`.
 - [ ] **Malik Luti** ([LinkedIn](https://www.linkedin.com/in/malik-luti/)) — not on the Group page yet; ask how to list him (role, section, and years). He is a co-author on FUSCO (MILCOM 2025) and the semantic digital twin paper (SMARTCOMP Workshops 2026).
 
 ## Colors

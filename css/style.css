@@ -1,11 +1,11 @@
 /* IASL — one stylesheet for every page. Edit the tokens below to restyle. */
 :root {
-  --paper: #faf8f3;      /* page background (warm off-white) */
+  --paper: #fdfcf9;      /* page background (near-white, warm) */
   --ink: #141b2e;        /* primary text, navy */
   --ink-2: #4a5268;      /* secondary text */
-  --ink-3: #666d80;      /* muted labels (4.9:1 on --paper) */
+  --ink-3: #575e70;      /* muted labels (6.3:1 on --paper) */
   --rule: #e2ded4;       /* hairlines */
-  --accent: #b34723;     /* rust accent (5.2:1 on --paper) */
+  --accent: #b34723;     /* rust accent (5.3:1 on --paper) */
   --accent-on-dark: #e07a54; /* rust on the navy band (5.8:1) */
   --focus: #1d4ed8;      /* keyboard focus ring */
   --band: #121a2e;       /* dark navy band */

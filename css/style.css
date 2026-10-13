@@ -3,9 +3,11 @@
   --paper: #faf8f3;      /* page background (warm off-white) */
   --ink: #141b2e;        /* primary text, navy */
   --ink-2: #4a5268;      /* secondary text */
-  --ink-3: #7d8496;      /* muted labels */
+  --ink-3: #666d80;      /* muted labels (4.9:1 on --paper) */
   --rule: #e2ded4;       /* hairlines */
-  --accent: #c2502b;     /* rust accent */
+  --accent: #b34723;     /* rust accent (5.2:1 on --paper) */
+  --accent-on-dark: #e07a54; /* rust on the navy band (5.8:1) */
+  --focus: #1d4ed8;      /* keyboard focus ring */
   --band: #121a2e;       /* dark navy band */
   --band-ink: #e9e6de;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -25,6 +27,19 @@ a { color: inherit; text-decoration-color: var(--accent); text-decoration-thickn
 a:hover { color: var(--accent); }
 img { max-width: 100%; height: auto; }
 
+/* ---------- Accessibility ---------- */
+/* Visible keyboard focus on every link and control (WCAG 2.4.7) */
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.band :focus-visible { outline-color: #ffffff; }
+main:focus { outline: none; }
+/* Skip link: hidden until a keyboard user tabs to it (WCAG 2.4.1) */
+.skip-link {
+  position: absolute; left: 16px; top: -100px; z-index: 100;
+  background: var(--ink); color: var(--paper); padding: 12px 16px;
+  font: 600 14px/1 var(--sans); text-decoration: none;
+}
+.skip-link:focus { top: 12px; }
+
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
 /* ---------- Header ---------- */
@@ -38,7 +53,7 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 1100px) { .brand span { display: none; } }
 .nav { display: flex; gap: 26px; flex-wrap: wrap; font: 15px/1 var(--sans); }
 .nav a { text-decoration: none; color: var(--ink); padding: 6px 0; border-bottom: 1px solid transparent; }
-.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--accent); color: var(--ink); }
+.nav a:hover, .nav a[aria-current] { border-bottom-color: var(--accent); color: var(--ink); }
 .btn {
   font: 12px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase;
   background: var(--ink); color: var(--paper); padding: 11px 16px; text-decoration: none;
@@ -81,10 +96,10 @@ h3 { font-weight: 600; font-size: 1.08rem; margin: 26px 0 8px; }
 /* ---------- Dark "latest" band ---------- */
 .band { background: var(--band); color: var(--band-ink); padding: 40px 0; margin-top: 40px; }
 .band .wrap { display: grid; grid-template-columns: 140px repeat(auto-fit, minmax(220px, 1fr)); gap: 0; }
-.band .label { color: var(--accent); }
+.band .label { color: var(--accent-on-dark); }
 .band .all { font: 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: #9aa0b0; text-decoration: none; }
 .band .item { border-left: 1px solid #2c3550; padding: 0 22px; }
-.band .date { font: 12px/1 var(--mono); letter-spacing: .1em; color: var(--accent); margin-bottom: 10px; }
+.band .date { font: 12px/1 var(--mono); letter-spacing: .1em; color: var(--accent-on-dark); margin-bottom: 10px; }
 .band .item p { margin: 0; font-size: 1rem; line-height: 1.5; }
 @media (max-width: 720px) {
   .band .wrap { grid-template-columns: 1fr; gap: 22px; }
@@ -111,7 +126,7 @@ h3 { font-weight: 600; font-size: 1.08rem; margin: 26px 0 8px; }
 /* People */
 .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 32px; }
 .person { padding: 16px 0; border-bottom: 1px solid var(--rule); }
-.person .n { font-weight: 600; font-size: 1.05rem; }
+.person .n { font-weight: 600; font-size: 1.05rem; line-height: 1.4; margin: 0; }
 .person .r { color: var(--ink-2); font-size: 15px; }
 .person .y { font: 12px/1.6 var(--mono); color: var(--ink-3); }
 .person .l { font: 12px/1.6 var(--mono); }

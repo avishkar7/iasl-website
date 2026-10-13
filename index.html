@@ -12,16 +12,17 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html">UCI IASL <span>· Intelligent and Autonomous Systems Lab</span></a>
+    <a class="brand" href="index.html" aria-current="page">UCI IASL <span>· Intelligent and Autonomous Systems Lab</span></a>
     <nav class="nav"><a href="research.html">Research</a><a href="group.html">Group</a><a href="fund.html">Fund</a><a href="papers.html">Papers</a><a href="updates.html">Misc. Updates</a></nav>
     <a class="btn" href="contact.html">Contact</a>
   </div>
 </header>
 
-<main>
+<main id="main" tabindex="-1">
 <section class="page-head">
   <div class="wrap grid-2">
     <div>
@@ -34,7 +35,7 @@
       </p>
     </div>
     <div class="aside">
-      <p class="label">Director</p>
+      <h2 class="label">Director</h2>
       <p><a href="levorato.html">Prof. Marco Levorato</a> — machine learning for systems, systems for machine learning, distributed and edge computing, vehicular autonomy, and healthcare.</p>
     </div>
   </div>
@@ -42,7 +43,7 @@
 
 <section class="section">
   <div class="wrap split">
-    <p class="label">About</p>
+    <h2 class="label">About</h2>
     <div>
       <p><strong>Our research</strong> focuses on fundamental computational aspects of <em>autonomous systems</em>, broadly intended as those capable of observing themselves and their environment to make self-governing decisions in pursuit of high-level goals.</p>
       <p><strong>Our mission</strong> is to facilitate integration of <em>intelligence</em>, broadly intended as the capacity to learn from and adjust to changing conditions, in different autonomous systems ranging from resource-constrained devices such as unmanned aerial vehicles, to large-scale communication and computation infrastructures of the Internet of Things and smart energy grids.</p>
@@ -53,7 +54,7 @@
 
 <section class="section">
   <div class="wrap split">
-    <p class="label">Research</p>
+    <h2 class="label">Research</h2>
     <div>
       <ul class="tags">
         <li><a href="research.html#autonomous-navigation">Autonomous Navigation and Perception</a></li>
@@ -70,7 +71,7 @@
 
 <section class="band" aria-label="Latest news">
   <div class="wrap">
-    <div><p class="label">Latest</p><a class="all" href="updates.html">All updates →</a></div>
+    <div><h2 class="label">Latest</h2><a class="all" href="updates.html">All updates →</a></div>
     <div class="item"><div class="date">Jun 30, 2023</div><p>“SC2 Benchmark: Supervised Compression for Split Computing” is accepted at Transactions on Machine Learning Research.</p></div><div class="item"><div class="date">Jun 8, 2023</div><p>Our group will present three papers at IEEE WoWMoM 2023.</p></div>
   </div>
 </section>
@@ -79,7 +80,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <div>© 2014–2026 IASL · <a href="https://www.cs.uci.edu">Computer Science</a> · <a href="https://www.ics.uci.edu">Donald Bren School of ICS</a> · <a href="https://uci.edu">UC Irvine</a></div>
-    <div>Contact: <a href="mailto:levorato@uci.edu">Marco Levorato</a> · <a href="https://github.com/uci-iasl/website">Source on GitHub</a></div>
+    <div>Contact: <a href="mailto:levorato@uci.edu" aria-label="Email Marco Levorato">Marco Levorato</a> · <a href="https://github.com/uci-iasl/website">Source on GitHub</a> · <a href="https://accessibility.uci.edu/reporting.php">Report an accessibility barrier</a></div>
   </div>
 </footer>
 
